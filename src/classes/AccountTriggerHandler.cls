@@ -1,7 +1,7 @@
 //prevent more than 1 account looking up to myobj__c
 //for any batch of account records that has myobj already existing
 //select from account where myobj in 
-//s adsfsad  fsadfsadf  cvbcvbcvbfvfv
+//s adsfsafsadfsadf  cvbcvbcvbfvfv
 public with sharing class AccountTriggerHandler { 
 	public static void AccountTriggerHandler (List<Account> ListOAccounts) {
 		
