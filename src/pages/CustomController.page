@@ -1,0 +1,29 @@
+<apex:page controller="jsAlertController">
+<apex:form >
+<style type="text/css">
+ .menuItem {font-weight: bolder }
+ .pageHeader {font-weight: bolder; color: #1797c0; font-size: 18px;}
+</style>
+<script>
+   function alertMe(){
+      var name = '{!Conference.name}';
+      var attendees  = '{!Conference.Expected_Attendees__c}'; 
+    alert("Conference Name: " + name + ", " + "Number of Expected Attendees: " + attendees);
+   }
+</script>
+
+
+  <!-- Begin Content -->
+ <span Class="pageHeader">Custom Conference Detail Page with Custom Controller</span> 
+<br /><br />
+ <span Class="menuItem">Conference Name:</span> {!Conference.name}<br />
+ <span Class="menuItem">City:</span> {!Conference.City__c}<br />
+ <span Class="menuItem">State:</span> {!Conference.State__c}<br />
+ <span Class="menuItem">Technology:</span> {!Conference.Technology__c}<br />
+ <span Class="menuItem">Date:</span> {!Conference.Date__c}<br />
+ <span Class="menuItem">Number of Attendees Expected:</span> {!Conference.Expected_Attendees__c}<br />
+ <span Class="menuItem">Current Number of Attendees:</span> {!Conference.Current_Number_of_Attendees__c}<br /><br /> 
+ <a href="#" onclick="alertMe();">Alert Me!</a>
+  <!-- End Content -->
+  </apex:form>
+</apex:page>

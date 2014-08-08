@@ -1,0 +1,16 @@
+<apex:page standardController="Conference__c" >
+<style type="text/css">
+ .menuItem {font-weight: bolder }
+ .pageHeader {font-weight: bolder; color: #1797c0; font-size: 18px;}
+</style>
+  <!-- Begin Content -->
+ <span Class="pageHeader">Custom Conference Detail Page</span> 
+<br /><br />
+ <span Class="menuItem">Conference Name:</span> {!Conference__c.name}<br />
+ <span Class="menuItem">City:</span> {!Conference__c.City__c}<br />
+ <span Class="menuItem">State:</span> {!Conference__c.State__c}<br />
+ <span Class="menuItem">Technology:</span> {!Conference__c.Technology__c}<br />
+ <span Class="menuItem">Date:</span> {!Conference__c.Date__c}<br />
+ <span Class="menuItem">Number of Attendees Expected:</span> {!Conference__c.Expected_Attendees__c}<br />
+  <!-- End Content -->
+</apex:page>
